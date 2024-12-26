@@ -28,23 +28,23 @@
 - Адрес	Описание
 127.0.0.1	Главная страница
 127.0.0.1/admin/	Панель администратора
+  
 Запуск проекта:
-
 cd django_sprint4
-Cоздать и активировать виртуальное окружение:
 
+Cоздать и активировать виртуальное окружение:
 python3 -m venv env
 source venv/bin/activate
-Установить зависимости из файла requirements.txt:
 
+Установить зависимости из файла requirements.txt:
 python3 -m pip install --upgrade pip
 pip install -r requirements.txt
+
 Выполнить миграции:
-
 python3 manage.py migrate
+
 Создать суперпользователя (если необходимо):
-
 python manage.py createsuperuser
-Запустить проект:
 
+Запустить проект:
 python3 manage.py runserver
